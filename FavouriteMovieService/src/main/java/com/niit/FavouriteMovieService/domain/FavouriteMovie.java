@@ -11,20 +11,18 @@ public class FavouriteMovie {
     private String genre;
     private String yearOfRelease;
     private List<String> language;
-    private String duration;  //1hr 30mins
     private List<String> cast;
     private String movieSynopsis;
     private String moviePosterUrl;
     private boolean isFavorite;
 
-    public FavouriteMovie(String movieId, String movieName, Double rating, String genre, String yearOfRelease, List<String> language, String duration, List<String> cast, String movieSynopsis, String moviePosterUrl, Boolean isFavorite) {
+    public FavouriteMovie(String movieId, String movieName, Double rating, String genre, String yearOfRelease, List<String> language,List<String> cast, String movieSynopsis, String moviePosterUrl, Boolean isFavorite) {
         this.movieId = movieId;
         this.movieName = movieName;
         this.rating = rating;
         this.genre = genre;
         this.yearOfRelease = yearOfRelease;
         this.language = language;
-        this.duration = duration;
         this.cast = cast;
         this.movieSynopsis = movieSynopsis;
         this.moviePosterUrl = moviePosterUrl;
@@ -42,8 +40,7 @@ public class FavouriteMovie {
                 ", rating=" + rating +
                 ", genre='" + genre + '\'' +
                 ", yearOfRelease='" + yearOfRelease + '\'' +
-                ", language=" + language +
-                ", duration='" + duration + '\'' +
+                ", language=" + language + '\'' +
                 ", cast=" + cast +
                 ", movieSynopsis='" + movieSynopsis + '\'' +
                 ", moviePosterUrl='" + moviePosterUrl + '\'' +
@@ -97,14 +94,6 @@ public class FavouriteMovie {
 
     public void setLanguage(List<String> language) {
         this.language = language;
-    }
-
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
     }
 
     public List<String> getCast() {
