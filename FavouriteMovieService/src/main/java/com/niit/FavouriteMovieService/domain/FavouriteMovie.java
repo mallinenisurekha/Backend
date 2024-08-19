@@ -7,7 +7,7 @@ public class FavouriteMovie {
     @Id
     private String movieId;
     private String movieName;
-    private Double rating;
+    private double rating;
     private String genre;
     private String yearOfRelease;
     private List<String> language;
@@ -16,7 +16,7 @@ public class FavouriteMovie {
     private String moviePosterUrl;
     private boolean isFavorite;
 
-    public FavouriteMovie(String movieId, String movieName, Double rating, String genre, String yearOfRelease, List<String> language,List<String> cast, String movieSynopsis, String moviePosterUrl, Boolean isFavorite) {
+    public FavouriteMovie(String movieId, String movieName, double rating, String genre, String yearOfRelease, List<String> language,List<String> cast, String movieSynopsis, String moviePosterUrl, Boolean isFavorite) {
         this.movieId = movieId;
         this.movieName = movieName;
         this.rating = rating;
@@ -64,11 +64,11 @@ public class FavouriteMovie {
         this.movieName = movieName;
     }
 
-    public Double getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(Double rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
